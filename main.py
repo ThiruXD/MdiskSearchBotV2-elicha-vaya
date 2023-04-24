@@ -45,9 +45,9 @@ async def message_handler(event):
         if  not await get_user_join(event.sender_id):
             haha = await event.reply(f'''**Hey! {event.sender.first_name} 😃**
 
-**ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ ᴋʀɴᴇ sᴇ ᴘᴇʜʟᴇ ᴀᴀᴘᴋᴏ ʜᴜᴍᴀʀᴇ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴋᴏ ᴊᴏɪɴ ᴋʀɴᴀ ʜᴏɢᴀ ✅**
+**😁 Please Join Our Updates Channel To Use Me **
 
-**ᴊᴏɪɴ ᴋʀɴᴇ ᴋᴇ ʟɪʏᴇ ɴɪᴄʜᴇ ᴄʟɪᴄᴋ ᴋᴀʀᴇ.👇🏻**''', buttons=Button.url('🍿Updates Channel🍿', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
+**Click Below Button To Join.👇🏻**''', buttons=Button.url('🍿Updates Channel🍿', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
             return await haha.delete()
 
